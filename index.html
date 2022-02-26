@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Item Lister</title>
+</head>
+<body>
+
+    <header> 
+        <h1> Item Lister</h1>
+
+        <form id="filter">
+            <input type="text" id="filter" placeholder="Search item.." autocomplete="off">
+        </form>
+    </header>
+    <div id="container">
+        <div class="items">
+            <ul id="itemList">
+                <li>Item 1 <i class="bi bi-x-lg"></i></li>
+                <li>Item 2 <i class="bi bi-x-lg"></i></li>
+                <li>Item 3 <i class="bi bi-x-lg"></i></li>
+                <li>Item 4 <i class="bi bi-x-lg"></i></li>
+                <li>Item 5 <i class="bi bi-x-lg"></i></li>
+            </ul>
+
+            <form id="addinput">
+                <input type="checkbox" id="checkbox"> Hide all Items <br>
+                <input type="text" placeholder="Add Items..." id="text" autocomplete="off">
+                <input type="submit" id="submit">
+                  </form>
+
+        </div>
+
+        <div id="empty"> <small> &copyThis items were added recently..Check back for more updates</small></div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
