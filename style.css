@@ -144,6 +144,7 @@ form #submit{
     form #filter{
         width: 220px;
         margin: 5px;
+        outline-color: rgb(12, 170, 25);
     }
     
     #container{
@@ -170,6 +171,7 @@ form #submit{
         form #text{
             width: 200px;
             margin: 5px;
+            outline-color: rgb(12, 170, 25);
             border-radius: 20px;
             margin-top: 15px;
         }
