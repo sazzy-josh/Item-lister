@@ -17,7 +17,7 @@ function addItem(e){
    let i = document.createElement('i')
    li.appendChild(i)
    i.className = "bi bi-x-lg"
-   li.append('i')
+   
    
   
    itemList.appendChild(li)
@@ -71,3 +71,28 @@ let searchList = document.querySelectorAll('li')
 
 
 searchBox.addEventListener('keyup',searchItem)
+
+
+
+
+// Global object
+const x = {
+    name :"Josh"
+} 
+var name = "Joshua"
+console.log(this.name)
+
+function callName(){
+    console.log(`Hello!!My name is this.name`)
+}
+
+function importantPerson(){
+       return  callName()
+   }
+
+
+ 
+
+//  var name = "Osaze";
+
+ importantPerson()
