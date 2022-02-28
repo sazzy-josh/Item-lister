@@ -8,6 +8,7 @@
 }
 body{
     background-color: aliceblue;
+    margin-bottom: 0;
 }
 header{
     height: 170px;
@@ -131,10 +132,10 @@ i:hover{
 footer{
     display: flex;
     justify-content: center;
-    margin: 0px;
+    margin-bottom: 0px;
     background-color: rgb(192, 226, 192);
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 #footer{
