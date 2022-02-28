@@ -123,6 +123,19 @@ i:hover{
      -ms-border-radius:15px ;
      -o-border-radius:15px ;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#footer:hover{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
 
 form #submit{
     padding:7px 10px;

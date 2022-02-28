@@ -75,24 +75,47 @@ searchBox.addEventListener('keyup',searchItem)
 
 
 
-// Global object
-const x = {
-    name :"Josh"
-} 
-var name = "Joshua"
-console.log(this.name)
-
-function callName(){
-    console.log(`Hello!!My name is this.name`)
-}
-
-function importantPerson(){
-       return  callName()
-   }
 
 
  
+//shalow and deep cloning
+const objA = {
+    name:"Joshua",
+    birthYear : 1998,
+    calcAge(){
+      return 2022 - this.birthYear
+    }
+}  
 
-//  var name = "Osaze";
+let age = objA.calcAge()
+console.log(age)
 
- importantPerson()
+const objB = {
+    name : "Osaze",
+    birthYear : 2000
+}
+
+
+let a = objA.calcAge.apply(objB)
+console.log(a)
+
+//cloning an obj
+
+const obj = {
+    firstName : "Osaze",
+    age : 1990,
+    quote(){
+        console.log(`I ${this.firstName} would never give up!!!`)
+    }
+}
+
+ let clone = Object.assign({}, obj)
+ let clone2 = {...obj}
+ obj.age = 1991
+ console.log(clone2)
+ console.log(obj)
+ clone.firstName = "Troubling"
+ obj.quote.apply(clone)
+
+
+
